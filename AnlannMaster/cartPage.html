@@ -1,112 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  
-  <style>
-  .heading {
-   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: lightgrey;
-	color:darkslategray;
-	font-size: 200px;
-	font-weight: 300;
-	text-align:center;
-	}  
-	
-	 h2 {
-   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: lightgrey;
-	color:darkslategray;
-	font-size: 150px;
-	font-weight: 100;
-	text-align:center;
-	}
-	
-	
-	h3 {
-   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: lightgrey;
-	color:darkslategray;
-	font-size: 25px;
-	font-weight: 50;
-	text-align:center;
-	}
-   
-   .myClass {height: 300px;}
-  
-   .deep {width: 600px; height: 600px;}
-  
-   .deep2 { height: 600px;}
-   
-   .bloc_left_price {
-    color: #c01508;
-    text-align: center;
-    font-weight: bold;
-    font-size: 150%;
-}
-.category_block li:hover {
-    background-color: #007bff;
-}
-.category_block li:hover a {
-    color: #ffffff;
-}
-.category_block li a {
-    color: #343a40;
-}
-.add_to_cart_block .price {
-    color: #c01508;
-    text-align: center;
-    font-weight: bold;
-    font-size: 200%;
-    margin-bottom: 0;
-}
-.add_to_cart_block .price_discounted {
-    color: #343a40;
-    text-align: center;
-    text-decoration: line-through;
-    font-size: 140%;
-}
-.product_rassurance {
-    padding: 10px;
-    margin-top: 15px;
-    background: #ffffff;
-    border: 1px solid #6c757d;
-    color: #6c757d;
-}
-.product_rassurance .list-inline {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    text-align: center;
-}
-.product_rassurance .list-inline li:hover {
-    color: #343a40;
-}
-.reviews_product .fa-star {
-    color: gold;
-}
-.pagination {
-    margin-top: 20px;
-}
-footer {
-    background: #343a40;
-    padding: 40px;
-}
-footer a {
-    color: #f8f9fa!important
-}
-
-  
-  </style>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>Anlann Food Co. --Cart--</title>
-  </head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anlann | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+    </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <a class="navbar-brand" href="#">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -125,13 +26,12 @@ footer a {
           Dropdown
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="loginpage.html">Login</a>
+          <a class="dropdown-item" href="loginPage.html">Login</a>
           <a class="dropdown-item" href="cartPage.html">Cart</a>
           <div class="dropdown-divider"></div>
         </div>
       </li>
       <li class="nav-item">
-        
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -141,135 +41,89 @@ footer a {
   </div>
 </nav>
   
-<div class="container">
-	<div><img src="anlannLogo.png" class="card-img-top w-50 mx-auto d-block" alt="..."></div>
-	</div>
 
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<section class="jumbotron text-center">
-    <div class="container">
-        <h1 class="jumbotron-heading">SHOPPING CART</h1>
-     </div>
-</section>
-
-<div class="container mb-4">
-    <div class="row">
-        <div class="col-12">
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col"> </th>
-                            <th scope="col">Product</th>
-                            <th scope="col" class="text-right">Price</th>
-                            <th> </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <!--  <td><img src="vegan.jpg" class="card-img-top w-50 mx-auto d-block" alt="..." /> </td> -->
-							 <td></td>
-                            <td>Anlann Vegan Option</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">€6.50</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                        </tr>
-                        <tr>
-                         <!--    <td><img src="special.jpg" class="card-img-top w-50 mx-auto d-block" alt="..." /> </td> -->
-						  <td></td>
-                            <td>Anlann Special</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">€6.50</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                        </tr>
-                        <tr>
-                          <!--    <td><img src="bowl.jpg" class="card-img-top w-50 mx-auto d-block" alt="..." /> </td> -->
-						   <td></td>
-                            <td>Anlann Bowl</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">€6.50</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Sub-Total</td>
-                            <td class="text-right">€6.50</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Delivery</td>
-                            <td class="text-right">€3.00</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><strong>Total</strong></td>
-                            <td class="text-right"><strong>€22.50</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="col mb-2">
-            <div class="row">
-                <div class="col-sm-12  col-md-6">
-                    <button class="btn btn-block btn-light">Continue Shopping</button>
+     <header class="main-header">
+	<div class="heading">Anlann</div>
+	</header>
+        <section class="container content-section">
+			<h2 class="signatureDishes"> Signature Dishes</h2>
+						
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Anlann Vegan Option</span>
+                    <img class="shop-item-image" src="vegan.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">€6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-6 text-right">
-                    <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
+                <div class="shop-item">
+                    <span class="shop-item-title">Anlann Special</span>
+                    <img class="shop-item-image" src="special.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">€5.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Anlann Bowl</span>
+                    <img class="shop-item-image" src="bowl.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">€6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </section>
 
-<!-- Footer -->
-<footer class="text-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-lg-4 col-xl-3">
-            <div class="col-md-4 col-lg-3 col-xl-3">
-                <h5>Contact</h5>
-                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                <ul class="list-unstyled">
-                    <li><i class="fa fa-home mr-2"></i> My company</li>
-                    <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
-                    <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
-                    <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">€0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="signatureDishes">Anlann</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="col-12 copyright mt-3">
-                <p class="float-left">
-                    <a href="#">Back to top</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
-</form>
-
-	</section>
-	<h3>© Copyright Natan Trosman & Darragh Ryan</h3>
-  </body>
-  
-		
-
+        </footer>
+    </body>
 </html>
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!------ Include the above in your HEAD tag ---------->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Optional JavaScript -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
