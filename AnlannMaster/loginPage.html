@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-  
+ 
+	<script src="login.js" async></script>
+
   <style>
   
   .loginbg {
@@ -137,7 +139,7 @@ span.psw {
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="loginPage.html">Login</a>
+        <a class="nav-link" href="loginPage.html" id="login">Login</a>
       </li>  
 	  </ul>
   </div>
@@ -156,13 +158,13 @@ span.psw {
 					<form action="action_page.php" method="post">
 
 					  <div class="loginbg">
-						<label for="uname"><b>Username</b></label>
-						<input type="text" placeholder="Enter Username" name="uname" required>
+						<label for="username"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="username" id="username" required>
 
-						<label for="psw"><b>Password</b></label>
-						<input type="password" placeholder="Enter Password" name="psw" required>
+						<label for="password"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="password" id="password" required>
 
-						<button type="submit">Login</button>
+						<button type="button" onclick="getInfo()">Login</button>
 						<label>
 						  <input type="checkbox" checked="checked" name="remember"> Remember me
 						</label>
@@ -170,7 +172,7 @@ span.psw {
 
 					  <div class="container" style="background-color:#f1f1f1">
 						<button type="button" class="cancelbtn"><a href="homePage.html"><font color="white">Cancel</font></a></button>
-						<span class="psw">Forgot <a href="#">password?</a></span>
+						<span class="password">Forgot <a href="#">password?</a></span>
 					  </div>
 					</form>
 			</div>
@@ -197,7 +199,6 @@ span.psw {
 	<h3>© Copyright Natan Trosman & Darragh Ryan</h3>
   </body>
   
-		
 
 </html>
 
