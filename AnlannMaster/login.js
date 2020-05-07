@@ -25,7 +25,7 @@ function getInfo() {
 			document.getElementById("login").innerHTML = "My Account";
 			alert(username + " is logged in")
 			console.log(username + " is logged in")
-			//window.location.href = "homePage.html";
+			window.location.href = "cartPage.html";
 			// stop the function if this is found to be true
 			return
 		}

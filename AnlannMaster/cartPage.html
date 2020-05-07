@@ -78,10 +78,18 @@
             <div class="cart-items">
             </div>
             <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
+                <strong class="cart-total-title" id="cartPostTotalHolder">Total</strong>
                 <span class="cart-total-price">€0</span>
             </div>
             <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+		<p id="couponDetailsHolder"></p>
+		<div id="invalidCoupon" class="alert alert-danger text-center hidden" role="alert">Invalid Code</div>
+				<input type="text" id="couponInput" placeholder="Coupon Code">
+					<button class="btn btn-success btn-sm text-light" onclick="addCoupon()">Apply Code</button></p>
+								
+						
+						
+						
         </section>
         <footer class="main-footer">
             <div class="container main-footer-container">
