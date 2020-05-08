@@ -1,3 +1,4 @@
+//All code provided was written in unison via screen sharing by Natan Trosman & Darragh Ryan
 	// Loop through Array of Objects
 var objPeople = [
 	{ // Object @ 0 index

@@ -1,9 +1,11 @@
+/*All code provided was written in unison via screen sharing by Natan Trosman & Darragh Ryan*/
+
 /* Set a login bg */
   .loginbg {
   background-color:#f1f1f1
   }
   
-  /* Bordered form */
+/* Bordered form */
 form {
   border: 3px solid #f1f1f1;
 }

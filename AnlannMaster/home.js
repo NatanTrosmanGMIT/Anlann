@@ -1,3 +1,4 @@
+//All code provided was written in unison via screen sharing by Natan Trosman & Darragh Ryan
 var slideIndex = 1;
 showSlides(slideIndex);
 
