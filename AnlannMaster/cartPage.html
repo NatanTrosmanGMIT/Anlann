@@ -3,10 +3,11 @@
     <head>
         <title>Anlann | Store</title>
         <meta name="description" content="This is the description">
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="cart.css" />
         <script src="store.js" async></script>
     </head>
   <body>
+  <!-- NavBar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <a class="navbar-brand" href="homePage.html">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,15 +24,15 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="loginPage.html">Login</a>
+        <a class="nav-link" href="loginPage.html">My Account</a>
       </li>  
 	  </ul>
   </div>
 </nav>
   
 
-
-     <header class="main-header">
+	<!-- Menu items -->
+    <header class="main-header">
 	<div class="heading">Anlann</div>
 	</header>
         <section class="container content-section">
@@ -67,7 +68,7 @@
                 </div>
             </div>
         </section>
-
+		<!-- Cart stuff -->
         <section class="container content-section">
             <h2 class="section-header">CART</h2>
             <div class="cart-row">
@@ -78,18 +79,20 @@
             <div class="cart-items">
             </div>
             <div class="cart-total">
+			    <!-- total and purchase button -->
                 <strong class="cart-total-title" id="cartPostTotalHolder">Total</strong>
                 <span class="cart-total-price">€0</span>
             </div>
             <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
 		<p id="couponDetailsHolder"></p>
+		<!-- Invalid Code alert -->
 		<div id="invalidCoupon" class="alert alert-danger text-center hidden" role="alert">Invalid Code</div>
 				<input type="text" id="couponInput" placeholder="Coupon Code">
 					<button class="btn btn-success btn-sm text-light" onclick="addCoupon()">Apply Code</button></p>
 								
 						
 						
-						
+		<!-- Social Media links and logos -->				
         </section>
         <footer class="main-footer">
             <div class="container main-footer-container">

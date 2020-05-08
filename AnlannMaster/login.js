@@ -22,7 +22,7 @@ function getInfo() {
 	for(var i = 0; i < objPeople.length; i++) {
 		// check is user input matches username and password of a current index of the objPeople array
 		if(username == objPeople[i].username && password == objPeople[i].password) {
-			document.getElementById("login").innerHTML = "My Account";
+			//document.getElementById("login").innerHTML = "My Account";
 			alert(username + " is logged in")
 			console.log(username + " is logged in")
 			window.location.href = "cartPage.html";
@@ -30,6 +30,7 @@ function getInfo() {
 			return
 		}
 	}
+	// alert if wrong login
 	alert("incorrect username or password")
 	console.log("incorrect username or password")
 }

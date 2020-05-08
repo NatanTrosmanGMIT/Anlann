@@ -1,0 +1,41 @@
+/* Set a style for all text */
+ p {
+   -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: lightgrey;
+	color:darkslategray;
+	font-size: 200px;
+	font-weight: 300;
+	text-align:center;
+	}
+	
+	 h2 {
+   -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: lightgrey;
+	color:darkslategray;
+	font-size: 150px;
+	font-weight: 100;
+	text-align:center;
+	}
+	
+	h3 {
+   -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: lightgrey;
+	color:darkslategray;
+	font-size: 25px;
+	font-weight: 50;
+	text-align:center;
+	}
+ /* Set BG image */
+	body {background-image: url("BG.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
+	}
+  
+   .myClass {height: 300px;}
+  
+   .deep {width: 600px; height: 600px;}
+  
+   .deep2 { height: 600px;}
+  
