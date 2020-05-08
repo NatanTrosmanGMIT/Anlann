@@ -1,4 +1,5 @@
-//Make sure everythings loaded
+//All code provided was written in unison via screen sharing by Natan Trosman & Darragh Ryan
+//Make sure that everything is loaded
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -93,54 +94,54 @@ let coupons = [
 	["Anlann25", 25, false]
 ];
 
-// Function to add a coupon to the cart (PC)
+//  add a coupon to the cart Function
 function addCoupon() {
-	// Hide the invalid coupon warning (PC)
+	// Hide invalid coupon warning
 	$("#invalidCoupon").hide();
-	// Get coupon code from input box (PC)
+	// Get coupon code from the input box 
 	let theCode = $("#couponInput").val();
-	// Boolean if coupon code is found in array (PC)
+	// Boolean if coupon code is found in array
 	let foundCoupon = false;
-	// Iterate through coupons array (PC)
+	// go through through coupons array 
 	for (let i = 0; i < coupons.length; i++) {
-		// Check if the code matches the 0th item in array (PC)
+		// Check that the code matches the 0th item in array
 		if (theCode == coupons[i][0]) {
-			// Set 2nd array item to true, indicating coupon is active (PC)
+			// Set 2nd array item to true, showing that the coupon is active
 			coupons[i][2] = true;
-			// Flip our boolean (PC) 
+			// Flip our boolean
 			foundCoupon = true;
-			// Trigger function to update the totals etc (PC)
+			// activate function to update the totals
 			updateCoupons();
 		}
 	}
-	// If we didn't find coupon code in array, warn user (PC)
+	// If coupon code not found in array, warn user
 	if (foundCoupon == false) {
 		$("#invalidCoupon").show();
 	}
 }
 
-// Function to update coupon display in cart (PC)
+//  update coupon display in cart Function
 function updateCoupons() {
-	// Clear the coupon list div (PC)
+	// Clear coupon list div
 	$("#couponDetailsHolder").html("");
-	// Set our total to the pre-coupon total (PC)
+	// make the total the total before the coupon code was applied
 	total = cartPreTotal;
-	// Tterate through coupons array (PC)
+	// go through through coupons array 
 	for (let i = 0; i < coupons.length; i++) {
-		// If coupon is active (PC)
+		// If coupon is active
 		if (coupons[i][2]) {
-			// Add coupon badge to display div (PC)
+			// Add coupon badge to display div 
 			$("#couponDetailsHolder").append("<p class='badge badge-primary mr-2'>" + coupons[i][0] + ": " + coupons[i][1] + "&percnt; off</p>");
-			// Calculate new total (PC)
+			// Calculate new total 
 			total *= 1 - ((coupons[i][1]) / 100);
 		}
 	}
-	// Display new post-coupon total below cart (PC)
+	// Display new total after coupon has been applied below cart
 	$("#cartPostTotalHolder").html("Total after coupons: &euro;" + total);
 }
 
 
-//display toatal
+//display total
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
     var cartRows = cartItemContainer.getElementsByClassName('cart-row')
